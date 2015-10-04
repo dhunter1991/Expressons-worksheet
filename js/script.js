@@ -1,14 +1,17 @@
 // Expressions worksheet Dylan Hunter
 
-var numberOfPeople = prompt ("how many people are at the party eating pizza");
-var numberOfPizzasOrdered = prompt("how many pizzas will be ordered");
-var numberOfSlicesInEachPizza = prompt ("how mnay slices are in each pizza");
+var groceryCost = [prompt ("week one grocery cost"), prompt("week two grocery cost"), prompt("week three grocery cost"), prompt("week four grocery cost"),
+prompt("week five grocery cost")];
+var totalCost = groceryCost[0]  + groceryCost[1]  + groceryCost[2] + groceryCost[3]
+    + groceryCost[4];
 
-var sparkysSlices = numberOfPizzasOrdered * numberOfSlicesInEachPizza % numberOfPeople;
+var average = totalCost/5;
 
-console.log(sparkysSlices);
+alert( "you have spent " + totalCost, " on groceries over 5 weeks.", "\nyour avergage grocery cost is " + average);
 
-alert ("sparky got to eat " + sparkysSlices + " slices");
+
+
+
 
 
 
